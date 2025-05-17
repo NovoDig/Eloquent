@@ -75,6 +75,6 @@ app.get('/about', (req : any, res : any) => {
 });
 
 // Start the server
-app.listen(80, () => {
+app.listen(3000, () => {
   console.log('Server is running...');
 });
