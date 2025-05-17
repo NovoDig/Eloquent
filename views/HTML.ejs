@@ -1,0 +1,147 @@
+<%- include("header.ejs"); %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>HTML</h1>
+            <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It describes the structure of a webpage using a series of elements and tags.</p>
+            <h2>Basic Structure</h2>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;  
+&lt;body&gt;
+    &lt;h1&gt;My First Heading&lt;/h1&gt;
+    &lt;p&gt;My first paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <h2>Common Tags</h2>
+            <ul>
+                <li>&lt;h1&gt; to &lt;h6&gt;: Headings</li>
+                <li>&lt;p&gt;: Paragraph</li>
+                <li>&lt;a&gt;: Anchor (link)</li>
+                <li>&lt;img&gt;: Image</li>
+                <li>&lt;div&gt;: Division or section</li>
+            </ul>
+            <h2>Attributes</h2>
+            <p>HTML elements can have attributes that provide additional information about the element. For example:</p>
+            <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+            <p>This code basically passes the URL https://www.example.com/ to the href attribute of the anchor element; href in this case is a link to a webpage.</p>
+
+            <h2>HTML Forms</h2>
+            <p>HTML forms are used to collect user input. They can contain various types of input elements, such as text fields, checkboxes, radio buttons, and submit buttons.</p>
+            <pre><code>&lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;br&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    &lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+            <p>This code creates a form with two input fields (name and email) and a submit button. The action attribute specifies where to send the form data when submitted.</p>
+            <h2>Preformatted Text</h2>
+            <p>The &lt;pre&gt; tag is used to display preformatted text. Text inside this tag is displayed in a fixed-width font, and whitespace is preserved. This is useful for displaying code snippets or other text where formatting is important.</p>
+            <pre><code>&lt;pre&gt;
+&lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;p&gt;This is a preformatted text example.&lt;/p&gt;
+&lt;/pre&gt;</code></pre>
+            <p>In this example, the text inside the &lt;pre&gt; tag will be displayed exactly as it is written, including line breaks and spaces.</p>
+            <h2>HTML Comments</h2>
+            <p>HTML comments are used to insert comments in the source code. They are not displayed in the browser. Comments start with &lt;!-- and end with --&gt;.</p>
+            <pre><code>&lt;!-- This is a comment --&gt;</code></pre>
+            <p>Comments are useful for leaving notes or explanations in the code, making it easier to understand for yourself and others.</p>
+            <h2>HTML Entities</h2>
+            <p>HTML entities are used to display special characters that have a specific meaning in HTML. For example, the less-than sign (&lt;) and greater-than sign (&gt;) are used to define tags, so to display them as text, you need to use their corresponding entities:</p>
+            <pre><code>&amp;lt; &amp;gt;</code></pre>
+            <p>Other common entities include:</p>
+            <ul>
+                <li>&amp;nbsp;: Non-breaking space</li>
+                <li>&amp;copy;: Copyright symbol (©)</li>
+                <li>&amp;reg;: Registered trademark symbol (®)</li>
+                <li>&amp;times;: Multiplication sign (×)</li>
+                <li>&amp;divide;: Division sign (÷)</li>
+            </ul>
+            <h2>Ordered and Unordered Lists</h2>
+            <p>HTML provides two types of lists: ordered lists and unordered lists. Ordered lists are numbered, while unordered lists are bulleted.</p>
+            <pre><code>&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            <p>This code creates an ordered list with three items. To create an unordered list, you can use the &lt;ul&gt; tag instead of &lt;ol&gt;.</p>
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            <p>This code creates an unordered list with the same three items.</p>
+            <h2>HTML Links</h2>
+            <p>HTML links are created using the &lt;a&gt; tag. The href attribute specifies the URL of the page the link goes to. You can also use the target attribute to specify how the link should open (e.g., in a new tab).</p>
+            <pre><code>&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example&lt;/a&gt;</code></pre>
+            <p>This code creates a link to https://www.example.com that opens in a new tab when clicked.</p>
+            <h2>HTML Images</h2>
+            <p>HTML images are added using the &lt;img&gt; tag. The src attribute specifies the image source, and the alt attribute provides alternative text for the image.</p>
+            <pre><code>&lt;img src="image.jpg" alt="Description of image"&gt;</code></pre>
+            <p>This code displays an image located at image.jpg. If the image cannot be displayed, the alt text will be shown instead.</p>
+            <h2>HTML Tables</h2>
+            <p>HTML tables are created using the &lt;table&gt; tag. Inside the table, you can use &lt;tr&gt; for table rows, &lt;th&gt; for table headers, and &lt;td&gt; for table data cells.</p>
+            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 1&lt;/td&gt;
+        &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+            <p>This code creates a simple table with two headers and one row of data. You can add more rows by repeating the &lt;tr&gt; and &lt;td&gt; tags.</p>
+            <h2>HTML Semantic Elements</h2>
+            <p>HTML5 introduced semantic elements that provide meaning to the content. These elements help search engines and browsers understand the structure of the webpage better. Some common semantic elements include:</p>
+            <ul>
+                <li>&lt;header&gt;: Represents the header of a section or page</li>
+                <li>&lt;footer&gt;: Represents the footer of a section or page</li>
+                <li>&lt;article&gt;: Represents a self-contained piece of content</li>
+                <li>&lt;section&gt;: Represents a thematic grouping of content</li>
+                <li>&lt;nav&gt;: Represents navigation links</li>
+                <li>&lt;aside&gt;: Represents content related to the main content</li>
+                <li>&lt;figure&gt;: Represents self-contained content, such as images or diagrams</li>
+                <li>&lt;figcaption&gt;: Represents a caption for a &lt;figure&gt; element</li>
+                <li>&lt;main&gt;: Represents the main content of a document</li>
+                <li>&lt;time&gt;: Represents a specific time or date</li>
+                <li>&lt;mark&gt;: Represents highlighted text</li>
+                <li>&lt;progress&gt;: Represents the progress of a task</li>
+                <li>&lt;meter&gt;: Represents a scalar measurement within a known range</li>
+                <li>&lt;summary&gt;: Represents a summary or heading for a &lt;details&gt; element</li>
+                <li>&lt;details&gt;: Represents additional details that the user can view or hide</li>
+                <li>&lt;dialog&gt;: Represents a dialog box or window</li>
+                <li>&lt;template&gt;: Represents a template that is not displayed when the page loads</li>
+                <li>&lt;slot&gt;: Represents a placeholder for content that will be filled in later</li>
+            </ul>
+            <p>Using semantic elements improves accessibility and SEO (Search Engine Optimization) by providing better context to search engines and assistive technologies.</p>
+            
+            <h2>HTML Validation</h2>
+            <p>Validating your HTML code is important to ensure it follows the standards set by the World Wide Web Consortium (W3C). You can use online validators like the W3C Markup Validation Service to check your HTML code for errors and improve its quality.</p>
+            <h2>Conclusion</h2>
+            <p>HTML is the backbone of web development. Understanding its structure and elements is essential for creating effective web pages.</p>
+
+            <div class="text-center">
+                <a href="/courses" class="btn btn-primary">Back to Courses</a>
+                <a href="/courses/CSS" class="btn btn-secondary">Next: CSS</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <footer class="bg-light text-center py-4">
+            <div class="container">
+                <p>&copy; 2025 <%= title %>. All rights reserved.</p>
+            </div>
+        </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
